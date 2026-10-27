@@ -377,6 +377,9 @@ AddCharset utf-8 .html .css .js .txt .xml .json
 
 /* router PHP per lo stack Nginx di Cloudways */
 fs.copyFileSync(path.join(SRC, 'index.php'), path.join(ROOT, 'index.php'));
+/* file statici di verifica (Search Console ecc.) copiati così come sono */
+const STATIC = path.join(SRC, 'static');
+if (fs.existsSync(STATIC)) fs.readdirSync(STATIC).forEach(f => fs.copyFileSync(path.join(STATIC, f), path.join(ROOT, f)));
 
 /* favicon */
 fs.copyFileSync(path.join(SRC, 'assets/favicon.svg'), path.join(ROOT, 'favicon.svg'));
