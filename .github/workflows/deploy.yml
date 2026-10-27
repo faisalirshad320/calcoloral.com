@@ -1,0 +1,20 @@
+name: Deploy to Cloudways
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudways git pull
+        env:
+          CW_EMAIL: ${{ secrets.CLOUDWAYS_EMAIL }}
+          CW_KEY: ${{ secrets.CLOUDWAYS_API_KEY }}
+          SERVER_ID: ${{ secrets.CLOUDWAYS_SERVER_ID }}
+          APP_ID: ${{ secrets.CLOUDWAYS_APP_ID }}
+        run: |
+          if [ -z "$CW_EMAIL" ] || [ -z "$CW_KEY" ]; then echo "Secrets not set — deploy via Cloudways 'Pull' button or add CLOUDWAYS_EMAIL / CLOUDWAYS_API_KEY / CLOUDWAYS_SERVER_ID / CLOUDWAYS_APP_ID"; exit 0; fi
+          TOKEN=$(curl -s -X POST https://api.cloudways.com/api/v1/oauth/access_token -d "email=$CW_EMAIL" -d "api_key=$CW_KEY" | python3 -c "import sys,json;print(json.load(sys.stdin)['access_token'])")
+          curl -s -X POST https://api.cloudways.com/api/v1/git/pull -H "Authorization: Bearer $TOKEN" \
+            -d "server_id=$SERVER_ID" -d "app_id=$APP_ID" -d "branch_name=main" -d "deploy_path=" | tee /dev/stderr | grep -q '"operation_id"'

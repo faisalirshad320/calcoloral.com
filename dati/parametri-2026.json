@@ -1,0 +1,581 @@
+{
+  "anno": 2026,
+  "aggiornato": "2026-10-27",
+  "irpef": [
+    {
+      "fino": 28000,
+      "aliquota": 0.23
+    },
+    {
+      "fino": 50000,
+      "aliquota": 0.33
+    },
+    {
+      "fino": null,
+      "aliquota": 0.43
+    }
+  ],
+  "inps": {
+    "standard": 0.0919,
+    "industria": 0.0949,
+    "apprendista": 0.0584,
+    "sogliaAggiuntiva": 56224,
+    "aliquotaAggiuntiva": 0.01,
+    "massimale": 122295
+  },
+  "cuneo": {
+    "sommaEsente": [
+      {
+        "fino": 8500,
+        "pct": 0.071
+      },
+      {
+        "fino": 15000,
+        "pct": 0.053
+      },
+      {
+        "fino": 20000,
+        "pct": 0.048
+      }
+    ],
+    "ulterioreDetrazione": {
+      "da": 20000,
+      "pieno": 32000,
+      "fino": 40000,
+      "importo": 1000
+    }
+  },
+  "detrazioneLavoro": {
+    "fascia1": {
+      "fino": 15000,
+      "importo": 1955
+    },
+    "fascia2": {
+      "fino": 28000,
+      "base": 1910,
+      "variabile": 1190,
+      "divisore": 13000
+    },
+    "fascia3": {
+      "fino": 50000,
+      "base": 1910,
+      "divisore": 22000
+    },
+    "maggiorazione": {
+      "da": 25000,
+      "fino": 35000,
+      "importo": 65
+    }
+  },
+  "detrazionePensione": {
+    "fascia1": {
+      "fino": 8500,
+      "importo": 1955
+    },
+    "fascia2": {
+      "fino": 28000,
+      "base": 700,
+      "variabile": 1255,
+      "divisore": 19500
+    },
+    "fascia3": {
+      "fino": 50000,
+      "base": 700,
+      "divisore": 22000
+    },
+    "maggiorazione": {
+      "da": 25000,
+      "fino": 29000,
+      "importo": 50
+    }
+  },
+  "trattamentoIntegrativo": {
+    "importo": 1200,
+    "fino": 15000,
+    "finoEsteso": 28000,
+    "franchigia": 75
+  },
+  "regioni": {
+    "abruzzo": {
+      "nome": "Abruzzo",
+      "scaglioni": [
+        [
+          28000,
+          1.67
+        ],
+        [
+          50000,
+          2.87
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "basilicata": {
+      "nome": "Basilicata",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ]
+    },
+    "bolzano": {
+      "nome": "P.A. Bolzano",
+      "scaglioni": [
+        [
+          50000,
+          1.23
+        ],
+        [
+          null,
+          1.73
+        ]
+      ],
+      "detrazione": {
+        "importo": 430.5,
+        "finoReddito": 90000
+      }
+    },
+    "calabria": {
+      "nome": "Calabria",
+      "scaglioni": [
+        [
+          null,
+          1.73
+        ]
+      ]
+    },
+    "campania": {
+      "nome": "Campania",
+      "scaglioni": [
+        [
+          15000,
+          1.73
+        ],
+        [
+          28000,
+          2.96
+        ],
+        [
+          50000,
+          3.2
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "emilia-romagna": {
+      "nome": "Emilia-Romagna",
+      "scaglioni": [
+        [
+          15000,
+          1.33
+        ],
+        [
+          28000,
+          1.93
+        ],
+        [
+          50000,
+          2.78
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "friuli-venezia-giulia": {
+      "nome": "Friuli Venezia Giulia",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ],
+      "ridotta": {
+        "finoReddito": 15000,
+        "aliquota": 0.7
+      }
+    },
+    "lazio": {
+      "nome": "Lazio",
+      "scaglioni": [
+        [
+          15000,
+          1.73
+        ],
+        [
+          null,
+          3.33
+        ]
+      ],
+      "ridotta": {
+        "finoReddito": 28000,
+        "aliquota": 1.73
+      },
+      "detrazione": {
+        "importo": 60,
+        "daReddito": 28000,
+        "finoReddito": 30000
+      }
+    },
+    "liguria": {
+      "nome": "Liguria",
+      "scaglioni": [
+        [
+          28000,
+          1.23
+        ],
+        [
+          50000,
+          3.18
+        ],
+        [
+          null,
+          3.23
+        ]
+      ]
+    },
+    "lombardia": {
+      "nome": "Lombardia",
+      "scaglioni": [
+        [
+          15000,
+          1.23
+        ],
+        [
+          28000,
+          1.58
+        ],
+        [
+          50000,
+          1.72
+        ],
+        [
+          null,
+          1.73
+        ]
+      ]
+    },
+    "marche": {
+      "nome": "Marche",
+      "scaglioni": [
+        [
+          15000,
+          1.23
+        ],
+        [
+          28000,
+          1.53
+        ],
+        [
+          50000,
+          1.7
+        ],
+        [
+          null,
+          1.73
+        ]
+      ]
+    },
+    "molise": {
+      "nome": "Molise",
+      "scaglioni": [
+        [
+          15000,
+          2.03
+        ],
+        [
+          28000,
+          2.23
+        ],
+        [
+          null,
+          3.63
+        ]
+      ]
+    },
+    "piemonte": {
+      "nome": "Piemonte",
+      "scaglioni": [
+        [
+          15000,
+          1.62
+        ],
+        [
+          28000,
+          2.68
+        ],
+        [
+          50000,
+          3.31
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "puglia": {
+      "nome": "Puglia",
+      "scaglioni": [
+        [
+          15000,
+          1.33
+        ],
+        [
+          28000,
+          2.13
+        ],
+        [
+          50000,
+          3.23
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "sardegna": {
+      "nome": "Sardegna",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ]
+    },
+    "sicilia": {
+      "nome": "Sicilia",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ]
+    },
+    "toscana": {
+      "nome": "Toscana",
+      "scaglioni": [
+        [
+          15000,
+          1.42
+        ],
+        [
+          28000,
+          1.43
+        ],
+        [
+          50000,
+          3.32
+        ],
+        [
+          null,
+          3.33
+        ]
+      ]
+    },
+    "trento": {
+      "nome": "P.A. Trento",
+      "scaglioni": [
+        [
+          50000,
+          1.23
+        ],
+        [
+          null,
+          1.73
+        ]
+      ],
+      "esenteFino": 30000
+    },
+    "umbria": {
+      "nome": "Umbria",
+      "scaglioni": [
+        [
+          15000,
+          1.73
+        ],
+        [
+          28000,
+          3.02
+        ],
+        [
+          50000,
+          3.12
+        ],
+        [
+          null,
+          3.33
+        ]
+      ],
+      "ridotta": {
+        "finoReddito": 28000,
+        "aliquota": 1.23
+      },
+      "detrazione": {
+        "importo": 150,
+        "daReddito": 28000,
+        "finoReddito": 50000
+      }
+    },
+    "valle-d-aosta": {
+      "nome": "Valle d'Aosta",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ],
+      "esenteFino": 15000
+    },
+    "veneto": {
+      "nome": "Veneto",
+      "scaglioni": [
+        [
+          null,
+          1.23
+        ]
+      ]
+    }
+  },
+  "addizionaleComunaleDefault": 0.8,
+  "naspi": {
+    "soglia": 1456.72,
+    "massimo": 1584.7,
+    "decalagePct": 0.03,
+    "meseDecalage": 6,
+    "meseDecalageOver55": 8
+  },
+  "gestioneSeparata": {
+    "aliquota": 0.2607,
+    "minimale": 18808,
+    "massimale": 122295
+  },
+  "tfr": {
+    "divisore": 13.5,
+    "contributoFondo": 0.005,
+    "rivalutazioneFissa": 0.015,
+    "quotaInflazione": 0.75,
+    "impostaRivalutazione": 0.17
+  },
+  "ccnl": {
+    "commercio": {
+      "nome": "Terziario, Distribuzione e Servizi (Confcommercio)",
+      "decorrenza": "2026-11-01",
+      "mensilita": 14,
+      "ore": 40,
+      "livelli": [
+        {
+          "id": "quadro",
+          "nome": "Quadro",
+          "minimo": 2243.86,
+          "contingenza": 540.37,
+          "indennita": 260.76
+        },
+        {
+          "id": "1",
+          "nome": "I livello",
+          "minimo": 2021.28,
+          "contingenza": 537.52
+        },
+        {
+          "id": "2",
+          "nome": "II livello",
+          "minimo": 1748.39,
+          "contingenza": 532.54
+        },
+        {
+          "id": "3",
+          "nome": "III livello",
+          "minimo": 1494.41,
+          "contingenza": 527.9
+        },
+        {
+          "id": "4",
+          "nome": "IV livello",
+          "minimo": 1292.46,
+          "contingenza": 524.22
+        },
+        {
+          "id": "5",
+          "nome": "V livello",
+          "minimo": 1167.69,
+          "contingenza": 521.94
+        },
+        {
+          "id": "6",
+          "nome": "VI livello",
+          "minimo": 1048.33,
+          "contingenza": 519.76
+        },
+        {
+          "id": "7",
+          "nome": "VII livello",
+          "minimo": 902.69,
+          "contingenza": 517.51
+        }
+      ]
+    },
+    "metalmeccanico": {
+      "nome": "Metalmeccanica Industria (Federmeccanica-Assistal)",
+      "decorrenza": "2026-06-01",
+      "mensilita": 13,
+      "ore": 40,
+      "livelli": [
+        {
+          "id": "d1",
+          "nome": "D1 (ex 2ª cat.)",
+          "minimo": 1784.94
+        },
+        {
+          "id": "d2",
+          "nome": "D2 (ex 3ª cat.)",
+          "minimo": 1979.37
+        },
+        {
+          "id": "c1",
+          "nome": "C1 (ex 3ª super)",
+          "minimo": 2022.12
+        },
+        {
+          "id": "c2",
+          "nome": "C2 (ex 4ª cat.)",
+          "minimo": 2064.88
+        },
+        {
+          "id": "c3",
+          "nome": "C3 (ex 5ª cat.)",
+          "minimo": 2211.43
+        },
+        {
+          "id": "b1",
+          "nome": "B1 (ex 5ª super)",
+          "minimo": 2370.33
+        },
+        {
+          "id": "b2",
+          "nome": "B2 (ex 6ª cat.)",
+          "minimo": 2542.98
+        },
+        {
+          "id": "b3",
+          "nome": "B3 (ex 7ª cat.)",
+          "minimo": 2838.99
+        },
+        {
+          "id": "a1",
+          "nome": "A1 (ex 8ª Quadri)",
+          "minimo": 2907.01
+        }
+      ]
+    }
+  }
+}
