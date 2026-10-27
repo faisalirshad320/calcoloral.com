@@ -5,7 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const ROOT = path.resolve(__dirname, '..');
+const REPO = path.resolve(__dirname, '..');
+const ROOT = path.join(REPO, 'public');   // webroot (Cloudways: webroot = /public)
 const SRC = path.join(__dirname, 'src');
 const CR = require('./src/assets/engine.js');
 const UI = require('./src/assets/ui.js');
@@ -198,8 +199,8 @@ function writeFile(rel, content) {
   fs.writeFileSync(full, content);
 }
 function clean() {
-  const keep = new Set(['_build', '.git', '.github', 'README.md', '.gitignore', 'node_modules']);
-  fs.readdirSync(ROOT).forEach(f => { if (!keep.has(f)) fs.rmSync(path.join(ROOT, f), { recursive: true, force: true }); });
+  fs.rmSync(ROOT, { recursive: true, force: true });
+  fs.mkdirSync(ROOT, { recursive: true });
 }
 
 clean();
