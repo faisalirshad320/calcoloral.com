@@ -374,6 +374,9 @@ AddType application/manifest+json .webmanifest
 AddCharset utf-8 .html .css .js .txt .xml .json
 `);
 
+/* router PHP per lo stack Nginx di Cloudways */
+fs.copyFileSync(path.join(SRC, 'index.php'), path.join(ROOT, 'index.php'));
+
 /* favicon */
 fs.copyFileSync(path.join(SRC, 'assets/favicon.svg'), path.join(ROOT, 'favicon.svg'));
 ['favicon.ico', 'og.png', 'logo-512.png', 'apple-touch-icon.png'].forEach(f => {
